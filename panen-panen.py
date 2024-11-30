@@ -43,14 +43,14 @@ data_panen = {
 
 for lokasi, data in data_panen.items():
     print(f"Lokasi: {data['nama_lokasi']}")
-    print("Hasil Panen:")
+    print("Hasil Panen: ")
     for hasil, jumlah in data['hasil_panen'].items():
         print(f"  {hasil.capitalize()}: {jumlah}")
     print("-" * 30)
 data
-print("Jumlah hasil panen jagung dari lokasi 2:", data_panen['lokasi2']['hasil_panen']['jagung'])
+print("Jumlah hasil panen jagung dari lokasi 2: ", data_panen['lokasi2']['hasil_panen']['jagung'])
 print("-" * 30)
-print("Nama lokasi dari lokasi3:", data_panen['lokasi3']['nama_lokasi'])
+print("Nama lokasi dari lokasi3: ", data_panen['lokasi3']['nama_lokasi'])
 print("-" * 30)
 
 padi_lokasi1 = data_panen['lokasi1']['hasil_panen']['padi']
@@ -89,6 +89,6 @@ for lokasi, data in data_panen.items():
     jumlah_jagung = data['hasil_panen']['jagung']
 
     if jumlah_padi > 1300 or jumlah_jagung > 800:
-        print(f"Lokasi {data['nama_lokasi']} memerlukan perhatian khusus.")
+        print(f"Lokasi : {data['nama_lokasi']} memerlukan perhatian khusus.")
     else:
         print(f"Lokasi : {data['nama_lokasi']} dalam kondisi baik.")
